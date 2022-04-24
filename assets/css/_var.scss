@@ -1,0 +1,61 @@
+// ===================================================================================
+// $color
+// ===================================================================================
+
+
+$color:#0029ff;
+// $color:red;
+$darken_color:darken( $color, 10% );
+$lighen_color:lighten( $color, 10% );
+
+$text_color:#454545;
+
+$black:black;
+
+
+$a_color:$color;
+
+
+$btn_color:$color;
+
+
+.p_color{ color: $color; }
+.p_dark_color{ color: $darken_color; }
+.p_light_color{ color: $lighen_color; }
+
+.p_bg_color{ background: $color }
+.p_dark_bg_color{ background: $darken_color; }
+.p_light_bg_color{ background: $lighen_color; }
+
+
+a,a:hover,a:focus{
+	text-decoration: none;
+}
+
+a{
+	color:$a_color;
+
+	&:hover{
+		color:$darken_color;
+	}
+
+}
+
+
+
+// <div class="container">
+// <div class="p_bg_color" style="margin-bottom:20px;height:50px;"></div>
+// <div class="p_dark_bg_color" style="margin-bottom:20px;height:50px;"></div>
+// <div class="p_light_bg_color" style="margin-bottom:20px;height:50px;"></div>
+// </div>
+
+
+.p_color_black{
+	color:$black;
+}
+
+
+
+// ================================================================================
+// relate post
+// ================================================================================

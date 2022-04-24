@@ -1,0 +1,22 @@
+// ===================================================================================
+// archive
+// ===================================================================================
+.archive {
+	.__title{
+		font-weight: bold;
+		font-size:60px;
+		@media (max-width:991px){
+			font-size:40px;
+		}
+		@media (max-width:767px){
+			font-size:32px;
+		}
+	}
+
+	.__con{
+		font-size:20px;
+		@media (max-width:991px){
+			font-size:18px;
+		}
+	}
+}

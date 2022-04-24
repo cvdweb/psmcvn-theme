@@ -1,0 +1,61 @@
+/* ------------------------------------------------------- */
+/* ------------------- pagination -------------------------- */
+/* ------------------------------------------------------- */
+.div-pagination{
+	ul.page-numbers{
+		padding:0px;
+		list-style-type:none;
+		display:flex;
+		flex-wrap:wrap;
+		// width:100%;
+		margin-bottom:0px;
+		justify-content: center;
+
+		li{
+			// display:inline-block;
+			a,span{
+				color:$text_color;
+
+				width:30px;
+				height:30px;
+				line-height:30px;
+				text-align: center;
+
+				// color:white;
+				// background:#dedede;
+				@include p-web(transition, all 100ms ease);
+				// margin:0px 2px;
+				display: block;
+
+				 // border:1px solid transparent;
+				 margin-right:5px;
+				 margin-bottom:5px;
+
+				&:hover{
+					// background:$color;
+					 border-color:$color;
+					color:$color;
+				}
+			}
+			span:not(.dots){
+				cursor:default;
+				// border-color:$color;
+				color:$color;
+			}
+
+			&:first-child{
+				a,span{
+					margin-left:0px;
+				}
+			}
+
+			&:last-child{
+				a,span{
+					margin-right:0px;
+				}
+			}
+
+		}
+
+	}
+}

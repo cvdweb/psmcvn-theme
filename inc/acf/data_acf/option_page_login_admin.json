@@ -1,0 +1,147 @@
+
+
+[
+    {
+        "key": "group_5ef2d9f693293",
+        "title": "Option Page login admin",
+        "fields": [
+            {
+                "key": "field_5ef2db696b0dc",
+                "label": "",
+                "name": "",
+                "type": "message",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "message": "Các thiết lập này sử dụng cho trang đăng nhập quản trị",
+                "new_lines": "br",
+                "esc_html": 0
+            },
+            {
+                "key": "field_5ff556ba7072d",
+                "label": "Hình ảnh logo",
+                "name": "op_page_login_admin__logo",
+                "type": "image",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "array",
+                "preview_size": "thumbnail",
+                "library": "all",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": ""
+            },
+            {
+                "key": "field_5ef2da125e164",
+                "label": "Hiển thị background ?",
+                "name": "op_page_login_admin__type",
+                "type": "radio",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "t1": "Theo màu",
+                    "t2": "Theo hình ảnh"
+                },
+                "allow_null": 0,
+                "other_choice": 0,
+                "default_value": "t1",
+                "layout": "horizontal",
+                "return_format": "value",
+                "save_other_choice": 0
+            },
+            {
+                "key": "field_5ef2dad65e165",
+                "label": "Màu sắc",
+                "name": "op_page_login_admin__color",
+                "type": "color_picker",
+                "instructions": "",
+                "required": 1,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_5ef2da125e164",
+                            "operator": "==",
+                            "value": "t1"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "#f1f1f1"
+            },
+            {
+                "key": "field_5ef2db025e166",
+                "label": "Hình ảnh",
+                "name": "op_page_login_admin__img",
+                "type": "image",
+                "instructions": "",
+                "required": 1,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_5ef2da125e164",
+                            "operator": "==",
+                            "value": "t2"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "array",
+                "preview_size": "thumbnail",
+                "library": "all",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": ""
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "options_page",
+                    "operator": "==",
+                    "value": "page_login_admin"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": ""
+    }
+]

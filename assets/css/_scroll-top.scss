@@ -1,0 +1,94 @@
+// ===================================================================================
+// scroll top
+// ===================================================================================
+
+.scroll_top{
+
+	 .icon-top{
+		@include p-web(transition,all 0.25s);
+
+		position: fixed;
+		right:15px !important;
+		bottom:-100px !important;
+		z-index:99; /* * */
+		visibility: hidden;
+
+		width:40px !important;
+		height:40px !important;
+		line-height:40px !important;
+
+		text-align: center;
+
+		font-size:13px;
+		
+		opacity:0;
+		cursor:pointer;
+
+	    // border: 1px solid transparent;
+
+	    border-radius: 50%;
+
+
+	    box-shadow: 0 1px 1px rgba(0,0,0,0.04);
+	    transition: all .1s ease-in-out;
+
+	    -webkit-user-select: none;
+	    -moz-user-select: none;
+	    -ms-user-select: none;
+	    user-select: none;
+
+	    color:  #d1d1d1;
+
+	    // background-color: #fff;
+	    // border-color: #d1d1d1;
+
+	     background: #eeeeee;
+	
+	}
+
+	@media (max-width:767px){
+
+		.icon-top{
+			width:30px !important; 
+			height:30px !important;
+			line-height:30px !important;
+			font-size:12px;
+
+			right:10px !important;
+
+		}
+
+	}
+
+	&.active{
+
+		 .icon-top{
+		 	bottom:15px !important;
+			opacity:1;
+			visibility:visible;
+
+			&:hover{
+				opacity: 1;
+				border-color: #767676!important;
+				color:#767676;
+
+			}
+
+		 }
+
+		 @media (max-width:767px){
+		 	 .icon-top{
+		 	 	bottom:10px !important;
+				opacity:0.8;
+
+				&:hover{
+					opacity:1;
+				}
+		 	 }
+		 }
+
+	}
+
+
+
+}

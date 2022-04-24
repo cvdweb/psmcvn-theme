@@ -1,0 +1,7 @@
+/* ------------------------------------------------------- */
+/* ------------------- @mixin -------------------------- */
+/* ------------------------------------------------------- */
+@mixin p-web($name,$tt...){ #{$name}:$tt;-webkit-#{$name}:$tt;-moz-#{$name}:$tt;-ms-#{$name}:$tt;-o-#{$name}:$tt;}
+@mixin p-kf( $ani ){@keyframes #{$ani}{@content;}@-webkit-keyframes #{$ani}{@content;}@-moz-keyframes #{$ani}{@content;}@-ms-keyframes #{$ani}{@content;}@-o-keyframes #{$ani}{@content;}}
+@mixin p-tron($x,$y:''){width:$x;height:$x;line-height:$x;text-align:center;border-radius:50%; @if ($y != '') { background:$y } }
+

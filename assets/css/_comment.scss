@@ -1,0 +1,175 @@
+// ===================================================================================
+// comment
+// ===================================================================================
+
+// btn submit, input text , textarea
+.btn-cmt1{
+	display: inline-block;
+    padding: 6px 12px;
+    font-size: 14px;
+    // line-height: 30px;
+    border: 1px solid transparent;
+    border-radius: 0px;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.04);
+    transition: all .1s ease-in-out;
+    text-align: center;
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    color: #767676;
+    fill: currentColor;
+    background-color: #fff;
+    border-color: #d1d1d1;
+    outline:none;
+
+    &:hover{
+    	color: #111;
+	    fill: currentColor;
+	    border-color: #767676;
+    }
+
+    &.btn-cmt1-left{
+    	text-align: left;
+    }
+
+    &:focus{
+    	 border-color: #d1d1d1;
+    	outline:none;
+    	box-shadow: none !important;
+    }
+}
+
+
+// li comment cho dau gach
+.comment{
+    list-style: none;
+    margin-left: 0;
+    padding-bottom: 13px;
+    border-bottom: 1px dashed #ededed;
+    margin-bottom: 21px;
+}
+
+
+// binh luan cap con
+.comment-list ul.children{
+	padding-left:60px;
+}
+
+// loai bo dau cham . cua ul
+.comment-list{
+	padding-left:0px;
+	margin-bottom:0px;
+	list-style: none;
+}
+
+
+// chia khung trai la hinh anh
+.comment-author-img{
+	// display: inline-block;
+    flex-basis:50px;
+	max-width: 50px;
+	width:100%;
+	vertical-align: top;
+
+    img{
+        border:1px solid #eee;
+        border-radius: 50%;
+        width:50px !important;
+        height: 50px !important;
+
+
+        @media (max-width: 480px){
+             width:30px !important;
+            height:30px !important;
+        }
+
+    }
+
+
+
+    @media (max-width: 480px){
+
+        flex-basis:30px;
+        max-width: 30px;
+
+    }
+}
+
+// khung phai la noi dung
+.comment-right{
+	// display: inline-block;
+     flex-basis:calc( 100% - 50px);
+    max-width: calc( 100% - 50px);
+	vertical-align: top;
+	padding-left:10px;
+
+    @media (max-width: 480px){
+
+        flex-basis:calc( 100% - 30px);
+        max-width: calc( 100% - 30px);
+
+    }
+
+}
+
+// clear float
+.single-reply:before,
+.single-reply:after{
+	content:'';
+	display:table;
+	clear:both;
+}
+
+
+.single-reply{
+    display: flex;
+}
+
+
+// name
+.comment-author-name{
+	// color: #000;
+	font-size:16px;
+	font-weight: bold;
+}
+
+// email
+.comment-email{
+	font-size: 12px;
+    line-height: 1;
+    color: #b4b4b4;
+    padding-left: 5px;
+}
+
+// time
+.comment-time{
+	font-size: 12px;
+    line-height: 1;
+    color: #b4b4b4;
+    padding-left: 5px;
+}
+
+// text
+.comment-text{
+	font-size:16px;
+}
+
+// tag a color
+.comment-reply a{
+    color: #b4b4b4;
+}
+
+// text (dong binh luan)
+.comment-reply-title small{
+	font-size:14px;
+    font-weight: 400;
+}
+
+
+.comment-reply-title{
+    font-size:23px;
+    font-weight: bold;
+}

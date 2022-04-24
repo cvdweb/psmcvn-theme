@@ -1,0 +1,84 @@
+// ===================================================================================
+// header
+// ===================================================================================
+
+.header_logo{
+	height: 35px;
+}
+
+
+.p-btn-s1{
+	background: none;border:1px solid #6c757d;
+	color:#6c757d;    
+	border-radius: 100px 100px 100px 100px;
+    padding: 10px 30px;
+}
+
+
+.p-btn-bar-s1{
+	border:none;
+	outline:none;
+	background: none;
+	color:black;
+	font-size: 23px;
+}
+
+.p-btn-bar-s2{
+	border:none;
+	outline:none;
+	background: none;
+	color:black;
+	font-size: 23px;
+	padding:5px 10px;
+}
+
+
+
+.p-btn-search-s1{
+	border:none;
+	outline:none;
+	background: none;
+	color:#888;
+	font-size:18px;
+	&:hover{
+		color:black;
+	}
+}
+
+
+.div-mod-search-form-s1{
+	position: relative;
+	display: flex;
+
+	.div-mod-search-form-s1__input{
+		border: 1px solid #ddd;
+		background: none;
+		border-radius: 0px;
+		outline:none;
+		padding:5px 10px;
+
+		width: 100%;
+
+		&:hover{
+    		// border-color:black;
+    	}
+
+	}
+
+	.div-mod-search-form-s1__submit{
+		background: none;
+		outline: none;
+		border: 1px solid #ddd;
+		border-left-width: 0px;
+
+		background: $btn_color;
+    	color: white;
+
+    	&:hover{
+    		opacity: .9;
+    	}
+
+	}
+
+
+}

@@ -1,0 +1,234 @@
+// ===================================================================================
+// menu
+// ===================================================================================
+
+.div-wrap-menu{
+	
+
+	background: white;
+	
+	 // box-shadow: 0 4px 12px rgba(0,0,0,.08), 0 0 1px rgba(1,0,0,.1);
+
+     box-shadow: 0 0 40px rgb(0 0 0 / 10%);
+
+     border-bottom:1px solid rgba(0,0,0,0.1);
+
+     padding:10px 0px;
+
+     
+	 &.__sticky{
+
+	 	position: sticky;
+		top:0px;
+		left:0;
+
+		width:100%;
+		
+		z-index: 999;
+		 // height:45px;
+		transition: padding 0.2s ease;
+
+
+		&.active{
+			padding:5px 0px;
+		}
+
+
+	 }
+
+	 body.admin-bar &{
+	 	&.__sticky{
+	 		top:32px;
+
+	 	}
+	 }
+
+}
+
+
+
+// ===================================================================================
+// menu nav
+// ===================================================================================
+
+.list-menu-sumon-fixed{
+	margin-bottom:0px;
+	padding-left:0px;
+
+	li{
+		display:inline-block;
+		position: relative;
+		// margin-right:10px;
+		margin-bottom: 0px;
+
+		& + li{
+			margin-right:10px;
+		}
+
+		a{
+			// color: $text_color;
+			    color: #54616c;
+
+			display: block;
+			padding:10px;
+			width:100%;
+			font-weight:normal;
+			 font-weight: 600;
+			font-size:14px;
+
+			&:not(:only-child):after{
+				content: "\f0d7";
+				font-family:'FontAwesome';
+				margin-left:10px;
+
+			}
+		}
+
+		
+
+		ul{
+			margin:0;
+			visibility:hidden;
+			opacity: 0;
+			position:absolute;
+			top:100%;
+			// top:calc(100% + 20px);
+			left:0%;
+
+			padding: 0px 0;
+			// padding-top:8px;
+			    border-radius: 4px;
+
+			z-index: 9999;
+			min-width: 200px;
+			 background:white;
+			// background-color: #f0f0f026;
+			 // border: 1px solid #d1d1d1;
+			  // box-shadow: 0 1px 1px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+			      box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.12);
+
+
+
+
+			li{
+				display: block;
+				width:100%;
+				background: white;
+				// border-bottom:1px solid #eee;
+
+				// &:last-child{
+				// 	border-width:0px;
+				// }
+
+				  a{
+
+				  	font-weight:normal;
+					font-size:14px;
+					padding: 8px 20px;
+					// border-left:3px solid transparent;
+					transition: all .2s ease;
+
+
+					&:not(:only-child):after{
+						content: "\f0da";
+						font-family:'FontAwesome';
+						margin-left:7px;
+					}
+
+				  }
+
+				 ul{
+
+				 	left:100% !important;
+					top:20px !important;
+				 }
+
+			}
+
+
+			
+		}
+
+
+
+		&.current-menu-item,
+		&.current_page_item,
+		&.current-menu-ancestor,
+		&.current_page_parent,
+		&.current_page_ancestor,
+		&:hover{
+			>a{
+	
+				// color: $color;
+				// color: rgba(84,97,108,.8);
+				color: #0029ff;
+				border-top:2px solid #0029ff;
+			}
+		}
+
+		&:hover{
+		
+			>ul{
+				visibility: visible;
+				opacity: 1;
+				top:calc(100% + 0px);
+				// transition:all 300ms ease;
+			}
+
+
+			li:hover>ul{
+				visibility: visible;
+				opacity: 1;
+				left:100% !important;
+				top:0px !important;
+				// padding:5px;
+				// transition:all 300ms ease !important;
+
+			}
+
+
+			li:hover>a{
+				// border-left:3px solid $text_color;
+				 background: rgba( $text_color, 0.1 );	
+			}
+
+		}
+
+
+	}
+
+	>li>ul{
+
+			// &:before{
+			//       	content: '';
+			// 	    position: absolute;
+			// 	    border: 6px solid transparent;
+			// 	    border-top-color: #fff;
+			// 	    border-right-color: #fff;
+			// 	     box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.12);
+			// 	    // visibility: hidden;
+			// 	    // opacity: 1;
+			// 	    filter: alpha(opacity=0);
+			// 	    -moz-transform: rotate(-45deg);
+			// 	    -webkit-transform: rotate(
+			// 	-45deg
+			// 	);
+			// 	    transform: rotate(
+			// 	-45deg
+			// 	);
+			// 	    -webkit-transition: all 0.4s ease-out;
+			// 	    -moz-transition: all 0.4s ease-out;
+			// 	    -o-transition: all 0.4s ease-out;
+			// 	    -ms-transition: all 0.3s ease-out;
+			// 	    transition: all 0.3s ease-out;
+			// 	        top: -5px;
+   //  				 left: 20px;
+   //  				 background: transparent;
+			//       }
+		
+	}
+}
+
+
+
+

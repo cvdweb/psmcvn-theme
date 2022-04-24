@@ -1,0 +1,210 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Ptheme - minify\n"
+"POT-Creation-Date: 2020-06-12 17:45+0700\n"
+"PO-Revision-Date: 2020-06-12 17:47+0700\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 2.2\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: style.css\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;"
+"_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: 404.php:31
+#, php-format
+msgid "Quay lại trang chủ tại %s đây! %s"
+msgstr "Return home by %s here! %s"
+
+#: block/content-none.php:2
+msgid "Không có bài viết nào !"
+msgstr "Not found !"
+
+#: block/releated_post.php:46 block/releated_post_taxonomy.php:49
+msgid "Bài viết liên quan"
+msgstr "Related Post"
+
+#: comments.php:22
+#, php-format
+msgctxt "comments title"
+msgid "Có %1$s bình luận"
+msgid_plural "Có %1$s bình luận"
+msgstr[0] "%1$s comment"
+msgstr[1] "%1$s comments"
+
+#: comments.php:46
+msgid "Đã đóng bình luận."
+msgstr "Close comment."
+
+#: footer.php:16
+#, php-format
+msgid "© CopyRight %1$s by Phuc"
+msgstr "© CopyRight %1$s by Phuc"
+
+#: header.php:66 header.php:148 searchform.php:4
+msgid "Tìm kiếm"
+msgstr "Search"
+
+#: header.php:84
+msgid "Liên hệ"
+msgstr "Contact"
+
+#: inc/cpt/class-block-entertainment.php:90
+#: inc/cpt/class-block-entertainment.php:164
+msgid "Category"
+msgstr "Thể loại"
+
+#: inc/cpt/class-block-entertainment.php:124
+#: inc/cpt/class-block-entertainment.php:166
+msgid "Tag"
+msgstr "Tag"
+
+#: inc/functions/add_comment.php:61
+msgid "Trả Lời"
+msgstr "Reply"
+
+#: inc/functions/add_comment.php:67
+msgid "(Bình luận đang chờ xét duyệt ! )"
+msgstr "(Comments are awaiting review!)"
+
+#: inc/functions/add_comment.php:74
+msgid "(Sửa bình luận này)"
+msgstr "(edit comment )"
+
+#: inc/functions/add_comment.php:102
+msgid "Họ tên"
+msgstr "Your name"
+
+#: inc/functions/add_comment.php:110
+msgid "email"
+msgstr "your email"
+
+#: inc/functions/add_comment.php:122
+msgid "Website"
+msgstr "Website"
+
+#: inc/functions/add_comment.php:143 inc/functions/add_comment.php:153
+msgid "Bình luận"
+msgstr "Comment"
+
+#: inc/functions/add_comment.php:145
+msgid "( Đóng trả lời )"
+msgstr "( Close )"
+
+#: inc/functions/add_comment.php:157
+msgid "Gửi bình luận"
+msgstr "Send"
+
+#: inc/functions/add_functions.php:124
+msgid "&copy;Copy Right to <b>Ptheme</b> | Thiết kế website"
+msgstr ""
+
+#: inc/functions/add_functions.php:304
+#, php-format
+msgid "Tác giả: \"%s\""
+msgstr "Author: \"%s\""
+
+#: inc/functions/add_functions.php:308
+#, php-format
+msgid "Tìm kiếm từ khóa: \"%s\""
+msgstr "Search keyword: \"%s\""
+
+#: inc/functions/add_functions.php:529
+msgid "Vừa xong"
+msgstr "Now"
+
+#: inc/functions/add_functions.php:535
+#, php-format
+msgid "Cách đây %s phút"
+msgstr "%s minutes ago"
+
+#: inc/functions/add_functions.php:541
+#, php-format
+msgid "Cách đây %s giờ"
+msgstr "%s hours ago"
+
+#: inc/functions/add_functions.php:548
+#, php-format
+msgid "Cách đây %s ngày"
+msgstr "%s days ago"
+
+#: inc/functions/add_status.php:18
+msgid "Giao diện đầy đủ"
+msgstr "Template fullwidth"
+
+#: inc/functions/add_status.php:20
+msgid "Giao diện nội dung bên phải"
+msgstr "Template rightcontent"
+
+#: inc/functions/add_theme_support.php:216
+#, fuzzy, php-format
+#| msgid "1Up không thành công vì hình ảnh lớn hơn %1$s MB"
+msgid "Up không thành công vì hình ảnh lớn hơn %1$s MB"
+msgstr "Upload failed because the image is larger than %1$s MB"
+
+#: inc/functions/add_widget.php:7 inc/functions/add_widget.php:9
+msgid "Widget Sidebar"
+msgstr ""
+
+#: inc/functions/add_widget.php:20 inc/functions/add_widget.php:22
+msgid "Widget Footer"
+msgstr ""
+
+#: inc/functions/add_widget.php:49
+msgid "Chose Show post content"
+msgstr "Vui lòng chọn bài viết"
+
+#: inc/functions/add_widget.php:94
+msgid "Title:"
+msgstr ""
+
+#: inc/functions/add_widget.php:104
+msgid "Chose Post:"
+msgstr "Chọn bài viết:"
+
+#: inc/functions/add_widget.php:119
+msgid "Please add post !"
+msgstr "Vui lòng thêm bài viết !"
+
+#: inc/helper/add_polylang-translate-rewrite-slugs.php:349
+msgid "Empty Term"
+msgstr ""
+
+#: single.php:67
+msgid "Sửa bài viết"
+msgstr "Edit"
+
+#: single.php:87
+msgid "Thể loại:"
+msgstr "Category:"
+
+#: single.php:116
+msgid "Từ khóa:"
+msgstr "Keyword:"
+
+#. Theme Name of the plugin/theme
+msgid "Ptheme - minify"
+msgstr ""
+
+#. Theme URI of the plugin/theme
+#. Author URI of the plugin/theme
+msgid "https://phucwp.com"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "Ptheme is the best"
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Phuc"
+msgstr ""
