@@ -47,7 +47,7 @@ if(!function_exists('p_load_lib_css')):
   add_action('wp_enqueue_scripts','p_load_lib_css', 1 );
 
   function p_load_lib_css(){
-
+    if ( is_admin() ) return;
 
 
       //$css_ran = '1.0';
@@ -60,7 +60,9 @@ if(!function_exists('p_load_lib_css')):
 
       wp_enqueue_style('font-awesome.min.css',  P_LIB . "/font-awesome/css/font-awesome.min.css" );
 
+     if ( is_page_template('template/template-product.php') || is_singular('post')   ) {
       wp_enqueue_style('swiper.min.css',  P_LIB . "/swiper/swiper-bundle.min.css" );
+    }
 
 
 
@@ -87,7 +89,7 @@ if(!function_exists('p_load_css')):
     add_action('wp_enqueue_scripts','p_load_css', 20 );
 
     function p_load_css(){
-
+        if ( is_admin() ) return;
 
 
         //$css_ran = '1.0';
@@ -95,7 +97,7 @@ if(!function_exists('p_load_css')):
         $css_ran = rand(100000000,999999999);
 
 
-        if ( !is_admin() ){
+        
             wp_enqueue_style('up_css', P_CSS . "/up/0f7c0eeb9c79d6fcb27114f31797709b.css" , '', $css_ran  );
         
 
@@ -104,7 +106,7 @@ if(!function_exists('p_load_css')):
 
         wp_enqueue_style('style_custom.css', P_CSS . "/custom/style_custom.css" , '', $css_ran  );
 
-        }
+       
         
 
     }
@@ -126,6 +128,8 @@ if(!function_exists('p_load_lib_js')):
     add_action('wp_enqueue_scripts','p_load_lib_js', 1 );
 
     function p_load_lib_js(){
+
+        if ( is_admin() ) return;
 
         global $wp_scripts,$wp;
 
@@ -198,6 +202,8 @@ if(!function_exists('p_load_js')):
     add_action('wp_enqueue_scripts','p_load_js', 20 );
 
     function p_load_js(){
+
+        if ( is_admin() ) return;
 
         global $wp_scripts,$wp;
 
