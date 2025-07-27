@@ -26,7 +26,7 @@
 
           <div class="row align-center" id="row-844731022">
 
-             <div id="col-712210869" class="col paymentmethod medium-9 small-12 large-9">
+             <div id="col-712210869" class="col paymentmethod medium-9 small-12 large-5">
 
                 <div class="col-inner text-left">
 
@@ -42,18 +42,25 @@
 
                    <div>GPKD số 0315679836 do Sở KH và ĐT TP Hồ Chí Minh cấp<br>Hotline: <a href="tel:0364333333">0364 333 333</a></div> -->
 
-                   <div>
+                   <div class="footer-address">
 
                       <?php echo get_field("op_fo_con","option") ?>
-
+   
                   </div>
 
                 </div>
 
              </div>
 
-             <div id="col-1810772085" class="col medium-3 small-12 large-3">
-
+             <div id="col-1810772085" class="col medium-3 small-12 large-3 ms-auto">
+            <div class="footer-links">
+               <a href="/taro-osg/">Taro OSG chính hãng</a> |
+               <a href="/taro-inox/">Mũi taro ren inox OSG</a> |
+               <a href="/taro-cnc/">Taro máy CNC OSG</a> |
+               <a href="/taro-nhat-ban/">Taro Nhật Bản chính hãng OSG</a>
+               <a href="/duong-ren-osg/">Dưỡng ren chính hãng OSG</a>
+               <a href="/phay-osg/">Phay Nhật Bản chính hãng OSG</a>
+            </div>
              </div>
 
           </div>
@@ -94,7 +101,7 @@
 
           .dark, .dark p, .dark td{
 
-            color: #6a7b96;
+            color: #ccc;
 
           }
 
@@ -164,6 +171,33 @@
 
 
 
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const items = document.querySelectorAll('.box-product');
+  const appeared = new Set();
+
+  const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting && !appeared.has(entry.target)) {
+        appeared.add(entry.target);
+
+        // Gán delay nhẹ ngẫu nhiên để tạo cảm giác tự nhiên (0-100ms)
+        const delay = Math.random() * 100;
+        entry.target.style.transitionDelay = `${delay}ms`;
+
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, {
+    threshold: 0.1, // Kích hoạt sớm hơn
+    rootMargin: '0px 0px -50px 0px' // Tăng sớm thời gian phản ứng
+  });
+
+  items.forEach((item) => observer.observe(item));
+});
+
+</script>
 
 
 <?php if ( !is_admin() ) { ?>

@@ -10,11 +10,82 @@
 
 
 
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.4/swiper-bundle.min.css"/>
 
+<style>
+  .swiper { width: 100%; height: 300px; }
+ 
+  .swiper-slide { position: relative; display: flex; justify-content: center; align-items: center; }
+  .swiper-slide img { width: 100%; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    transform-style: preserve-3d; transition: transform 0.8s ease; }
+  .swiper-slide img:hover { transform: perspective(1000px) rotateY(10deg) translateZ(30px); }
+  .swiper-button-next, .swiper-button-prev { color: #fff; }
+  .swiper-pagination-bullet-active { background: #00559D; }
+   @media(max-width:767px){
+      .swiper{
+         height: 150px;
+      }
+ 
+  }
+</style>
+
+<div class="swiper">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide">
+      <a href="https://psmcvn.com/mui-phay-osg-ae%e2%80%91vms/"><img src="https://psmcvn.com/wp-content/uploads/2025/07/mui-phay-chi-tiet.png" alt="Mũi phay OSG"></a>     
+    </div>
+    <div class="swiper-slide">
+     <a href="https://psmcvn.com/taro-may-osg/"> <img src="https://psmcvn.com/wp-content/uploads/2025/06/taro-osg3.jpg" alt="Taro OSG"></a>
+    </div>
+    <div class="swiper-slide">      
+       <a href="https://psmcvn.com/duong-ren-phich-cam-osg-co-lop-phu/"><img src="https://psmcvn.com/wp-content/uploads/2025/07/duong-ren-phich-cam-3.jpg" alt="Dưỡng kiểm ren OSG"></a>
+    </div>
+    <div class="swiper-slide">      
+       <a href="https://psmcvn.com/duong-ren-vong-osg/"><img src="https://psmcvn.com/wp-content/uploads/2025/07/duong-ren-vong.jpg" alt="Dưỡng kiểm ren vòng OSG"></a>
+    </div>
+   
+  </div>
+  <!-- Controls -->
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+  <div class="swiper-pagination"></div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.4/swiper-bundle.min.js"></script>
+<script>
+  const swiper = new Swiper('.swiper', {
+    loop: true,
+    speed: 2000,
+    autoplay: { delay: 4000, disableOnInteraction: false },
+    effect: 'slide',
+    slidesPerView: 1,
+    pagination: { el: '.swiper-pagination', clickable: true },
+    navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' },
+    spaceBetween: 20,
+  // Responsive breakpoints
+  breakpoints: {
+    // when window width is >= 320px
+    320: {
+      slidesPerView: 2,
+      spaceBetween: 20
+    },
+    // when window width is >= 480px
+    480: {
+      slidesPerView: 2,
+      spaceBetween: 20
+    },
+    // when window width is >= 640px
+    640: {
+      slidesPerView: 3,
+      spaceBetween: 20
+    }
+  }
+  });
+</script>
 
          <main id="main" class="">
 
-            <div id="content" role="main" class="content-area">
+            <div id="content" role="main" class="content-area container">
 
                <section class="section home-banggia" id="section_523773308">
 
@@ -206,7 +277,7 @@ $op_hp_pd_repeat = get_field("op_hp_pd_repeat","option");
 
 
 
-                               <div class="" style="margin-bottom: 20px ;font-size: 20px;border-bottom: 1px solid #ececec;   color:rgba(102,102,102,.85)">
+                               <div class="product-cate">
 
                                  <a href="<?php echo  $__link_title ?: "#"; ?>" class="<?php echo !$__link_title ? "p-pe-none" : "" ; ?>">
 
@@ -226,7 +297,7 @@ $op_hp_pd_repeat = get_field("op_hp_pd_repeat","option");
 
                                  <?php foreach(  $ar_id as $k2 => $v2 ) : ?>
 
-                                  <div id="col-794286143" class="p767-mb-20 col-sm-4" style="max-width:100%;width:100%">
+                                  <div class="box-product mb-4 col-sm-4" style="max-width:100%;width:100%">
 
                                        <?php echo p_loop_item_4( $v2 ); ?>
 

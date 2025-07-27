@@ -50,12 +50,14 @@
 // ===================================================================================
 // menu nav
 // ===================================================================================
-
+.header-bottom.nav-dark{
+	background-color: $color2;
+}
 .list-menu-sumon-fixed{
 	margin-bottom:0px;
 	padding-left:0px;
 
-	li{
+	>li{
 		display:inline-block;
 		position: relative;
 		// margin-right:10px;
@@ -64,23 +66,30 @@
 		& + li{
 			margin-right:10px;
 		}
-
+		&:first-of-type{
+			a{
+				padding-left: 0;
+			}
+		}
 		a{
 			// color: $text_color;
-			    color: #54616c;
+			    color: $white;
 
 			display: block;
-			padding:10px;
+			padding: 12px 10px;
 			width:100%;
 			font-weight:normal;
 			 font-weight: 600;
-			font-size:14px;
+			font-size:16px;
 
 			&:not(:only-child):after{
-				content: "\f0d7";
+				// content: "\f0d7";
+				color: $white;
+				content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%23ffffff' class='bi bi-chevron-down' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708'/%3E%3C/svg%3E");
 				font-family:'FontAwesome';
 				margin-left:10px;
-
+				position: relative;
+				top: 4px;
 			}
 		}
 
@@ -108,7 +117,13 @@
 			      box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.12);
 
 
-
+			&.sub-menu{
+				li{
+					a{
+						color: $text_color;
+					}
+				}
+			}
 
 			li{
 				display: block;
@@ -161,8 +176,8 @@
 	
 				// color: $color;
 				// color: rgba(84,97,108,.8);
-				color: #0029ff;
-				border-top:2px solid #0029ff;
+				color: $white;
+				border-color: #0029ff;
 			}
 		}
 

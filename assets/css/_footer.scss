@@ -13,9 +13,34 @@
 // }
 
 
-.footer{
-	
+.zalo-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  z-index: 9999;
+  animation: pulse 2s infinite;
+  transition: transform 0.3s ease;
+  &.zalo-button2{
+    bottom: 80px;
+  }
 }
+.zalo-button img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+.zalo-button:hover {
+  transform: scale(1.1);
+}
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+
 
 
 .top_footer{
@@ -29,4 +54,13 @@
 .bottom_footer{
 	    background: #000;
     color: #fff;
+}
+.footer-address{
+  h2{
+    font-size: 15px;
+    font-weight: bold;
+  }
+  address, p{
+    font-size: 14px;
+  }
 }

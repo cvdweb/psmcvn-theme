@@ -1,0 +1,36 @@
+{
+  "name": "iptp-theme",
+  "version": "1.0.0",
+  "description": "IPTP Networks",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "css": "sass --watch assets/css/style.scss assets/css/style.css -s compressed",
+    "map-editor": "sass --watch css/admin/map_editor.scss css/admin/map_editor.css -s compressed",
+    "clean": "rm js/dist/index.js",
+    "dev": "webpack --mode development --watch",
+    "prod": "webpack --mode production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://lam_visal@git.iptp.dev/phuc/iptp-theme.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@popperjs/core": "^2.11.6",
+    "bootstrap": "^5.3.0"
+  },
+  "devDependencies": {
+    "css-loader": "^6.7.1",
+    "sass": "^1.49.10",
+    "sass-loader": "^12.6.0",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.70.0",
+    "webpack-cli": "^4.9.2"
+  }
+}

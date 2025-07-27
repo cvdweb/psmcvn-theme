@@ -4,14 +4,16 @@
 
 
 $color:#0029ff;
+$color2:#00559D;
+$color3: #f60;
 // $color:red;
 $darken_color:darken( $color, 10% );
 $lighen_color:lighten( $color, 10% );
 
 $text_color:#454545;
-
+$white:#fff;
 $black:black;
-
+$title:$color2;
 
 $a_color:$color;
 

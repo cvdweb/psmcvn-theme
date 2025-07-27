@@ -813,6 +813,6 @@ add_action('wp_dashboard_setup', 'wpdocs_remove_dashboard_widgets');
  */
 function wpdocs_remove_dashboard_widgets(){
     remove_meta_box('rank_math_dashboard_widget', 'dashboard', 'normal');   // Right Now
-    // remove_meta_box('dashboard_site_health', 'dashboard', 'normal');   // Right Now
+    // remove_meta_box('dashboard_site_health', 'dashboard', 'normal');   // Right Nowchch
   
   }

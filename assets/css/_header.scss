@@ -5,7 +5,47 @@
 .header_logo{
 	height: 35px;
 }
-
+.header{
+	.flex-row{
+		@media(max-width:767px){
+			flex-wrap: wrap;
+		}
+	}
+}
+#logo{
+	@media(max-width:767px){
+			width: 100%!important;
+		}
+}
+.header-main{
+	height: 120px;
+	@media(max-width:767px){
+			height: auto!important;
+		}
+}
+.medium-logo-center .logo{
+	@media(max-width:767px){
+			order: 0;
+		}
+}
+.site-title{
+	color: $color;
+	text-transform: uppercase;
+	font-size: 1.5rem;
+	margin-bottom: 0;
+	@media(max-width:767px){
+			text-align: center;
+			font-size: 14px;
+			margin-top: 10px;
+		}
+	.--text1{
+		color: $color3;
+	}
+	.--text2{
+		color: $color2;
+		// padding-left: 15px;
+	}
+}
 
 .p-btn-s1{
 	background: none;border:1px solid #6c757d;

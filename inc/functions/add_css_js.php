@@ -58,7 +58,7 @@ if(!function_exists('p_load_lib_css')):
 
       wp_enqueue_style('bootstrap.min.css',  P_LIB . "/bootstrap/css/bootstrap.min.css" );
 
-      wp_enqueue_style('font-awesome.min.css',  P_LIB . "/font-awesome/css/font-awesome.min.css" );
+      // wp_enqueue_style('font-awesome.min.css',  P_LIB . "/font-awesome/css/font-awesome.min.css" );
 
      if ( is_page_template('template/template-product.php') || is_singular('post')   ) {
       wp_enqueue_style('swiper.min.css',  P_LIB . "/swiper/swiper-bundle.min.css" );

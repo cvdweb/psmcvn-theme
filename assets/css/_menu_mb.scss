@@ -222,31 +222,56 @@
 	list-style-type: none;
 	padding-left:0px;
 	margin:0px;
-	// text-decoration:none;
+	border: 1px solid #eff2f5;
+	border-top: 0;
+	border-bottom: 0;
 
 	li{
+		margin-bottom: 0;
+		&.menu-item{
+			&:nth-of-type(2) a{
+				background-image: url('https://psmcvn.com/wp-content/uploads/2025/07/mui-taro.svg');
+			}
+			&:nth-of-type(3) a{
+				background-image: url('https://psmcvn.com/wp-content/uploads/2025/07/mui-phay.svg');
+			}
+			&:nth-of-type(4) a{
+				background-image: url('https://psmcvn.com/wp-content/uploads/2025/07/ban-ren.svg');
+			}
+			&:nth-of-type(5) a{
+				background-image: url('https://psmcvn.com/wp-content/uploads/2025/07/duong-ren.svg');
+			}
+		}
 		a{
 			
 			color:rgba(102,102,102,.85);
 			display: block;
-			padding:10px 0px;
+			padding:20px 0px 20px 75px;
 			position: relative;
-		    text-decoration: none;
-		    // text-transform: uppercase;
-		    font-size:13px;
-		    font-weight: 600;
-		     border-bottom: 1px solid rgb(239, 242, 245);
-
-		     &:hover{
-
-							color:#0029ff;
-					
-		     }
+			text-decoration: none;
+			// text-transform: uppercase;
+			font-size:16px;
+			font-weight: 600;
+			border-bottom: 1px solid rgb(239, 242, 245);
+			background: url(https://psmcvn.com/wp-content/uploads/2025/07/mui-khoan.svg) no-repeat left 10px top 12px;
+    	background-size: 40px;
+			&:hover{
+				color:$black;			
+			}
+			 &::before{
+				content: "";
+				display: none;
+				width: 0; 
+				height: 0; 
+				border-top: 8px solid transparent;
+				border-bottom: 8px solid transparent;  
+				border-left: 6px solid $color2;
+				position: absolute;
+				left: 0;
+				top: 50%;
+				transform: translateY(-50%);
+			}
 		}
-
-
-
-
 
 		.btn_fa_show_sub{
 			position: absolute;

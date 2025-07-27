@@ -20,3 +20,13 @@
 		}
 	}
 }
+.div-the-con{
+	>ul, >ol{
+		padding-left: 2rem;
+	}
+}
+.pricing-table-items.items{
+	ul + p{
+		display: none;
+	}
+}

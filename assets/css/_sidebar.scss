@@ -4,4 +4,34 @@
 
 
 
-
+.productlist-heading{
+  background-color: #00559D;
+  color: #fff;
+  padding: 10px 10px 10px 20px;
+  font-size: 20px;
+  border-left: 6px solid #112b64;
+  position: relative;
+  margin-bottom: 0;
+  &::before{
+    content: "";
+    width: 0; 
+    height: 0; 
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;  
+    border-left: 6px solid #112b64;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  &::after{
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 50%;
+    height: 2px;
+    width: 20px;
+    background-color: #fff;
+    transform: translateY(-50%);
+  }
+}

@@ -139,4 +139,6 @@ if ( !$single_tem ){
       </div>
    </div>
 </div>
+
+
 <?php get_footer() ?>
